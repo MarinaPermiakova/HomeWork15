@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/switch_mode_btn"
+        style="@style/bar_button"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/normal_mode"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/switch_mode_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:id="@+id/main_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    android:id="@+id/btnC"
+                    style="@style/top_bar_button"
+                    android:text="@string/c" />
+
+                <Button
+                    style="@style/top_bar_button"
+                    android:text="@string/plus_or_minus" />
+
+                <Button
+                    style="@style/top_bar_button"
+                    android:text="@string/percent" />
+
+                <Button
+                    style="@style/top_bar_button"
+                    android:text="@string/div" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    android:id="@+id/btn7"
+                    style="@style/button"
+                    android:text="@string/_7" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    style="@style/button"
+                    android:text="@string/_8" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    style="@style/button"
+                    android:text="@string/_9" />
+
+                <Button
+                    style="@style/top_bar_button"
+                    android:text="@string/mult" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    android:id="@+id/btn4"
+                    style="@style/button"
+                    android:text="@string/_4" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    style="@style/button"
+                    android:text="@string/_5" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    style="@style/button"
+                    android:text="@string/_6" />
+
+                <Button
+                    style="@style/top_bar_button"
+                    android:text="@string/minus" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    android:id="@+id/btn1"
+                    style="@style/button"
+                    android:text="@string/_1" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    style="@style/button"
+                    android:text="@string/_2" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    style="@style/button"
+                    android:text="@string/_3" />
+
+                <Button
+                    style="@style/top_bar_button"
+                    android:text="@string/plus" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    android:id="@+id/btn0"
+                    style="@style/button"
+                    android:layout_weight="2.1"
+                    android:text="@string/_0" />
+
+                <Button
+                    android:id="@+id/commaBtn"
+                    style="@style/button"
+                    android:layout_weight="1"
+                    android:text="@string/comma" />
+
+                <Button
+                    style="@style/top_bar_button"
+                    android:text="@string/equal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engineer_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    style="@style/button"
+                    android:text="" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/inv" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/in" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/bkt_left" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/bkt_right" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/intg" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/sinh"
+                    android:textSize="32sp" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/sin" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/xy"/>
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/factorial" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/dms" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/cosh"
+                    android:textSize="32sp" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/cos" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/x_178" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/_8730_x" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/_960" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/tanh" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/tan" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/x_179" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/_8731_x" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayoutStyle">
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/f_e" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/exp" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/mod" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/log" />
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/_10_sup_x" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/back"
+        android:gravity="center_vertical|end"
+        android:padding="8dp"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
